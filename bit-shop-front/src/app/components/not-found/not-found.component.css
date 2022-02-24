@@ -1,0 +1,39 @@
+.error-message {
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(#e66465, #9198e5); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px);
+    width: 100%;
+}
+h1 {
+    margin: 0px;
+}
+.error-message_container{
+    text-align: center;
+    color: white;
+}
+.animated {
+    position: relative;
+    animation-name: example;
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+}
+@keyframes example {
+    0%   {top:0px; left: -100px}
+    10%  {top:-75px; left: -75px}
+    20%  {top:0px; left: -50px}
+    35%  {top:-75px; left: -25px}
+    40% {top:0px; left: 0px}
+    50% {top:-75px; left: 25px}
+    60% {top:0px; left: 50px}
+    70% {top:-75px; left: 25px}
+    80% {top:0px; left: 0px}
+    90% {top:-75px; left: -25px}
+    100% {top: 0px; left: -50px}
+  }
+
